@@ -8,6 +8,7 @@ const LineItem = ({ item, handleCheck, handleDelete }) => {
             onChange={() => handleCheck(item.id)}
             checked={item.checked}
         />
+        <span className='checkColor'></span>
         <label
             style={(item.checked) ? {textDecoration:'line-through'}: null}
             onDoubleClick={() => handleCheck(item.id)}
